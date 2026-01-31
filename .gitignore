@@ -4,3 +4,7 @@
 
 # Main package gaze3D
 gaze3D/
+
+# Data
+*.pt
+*.ckpt*

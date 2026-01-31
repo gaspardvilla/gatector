@@ -8,7 +8,7 @@ if [ ! -d "gaze3d" ]; then
 fi
 
 # Download model weights and checkpoints
-if [ ! -d "gaze3d/weights" ]; then
+if [ ! -d "gaze3d/checkpoints" ] || [ ! -d "gaze3d/weights" ]; then
     echo "Downloading model weights..."
     cd gaze3d
     git lfs pull
@@ -19,7 +19,6 @@ fi
 # Symlink so demo.py's "./weights/..." resolves when run from backend/
 if [ -d "gaze3d/weights" ] && [ ! -L "weights" ]; then
     ln -sf gaze3d/weights weights
-    echo "✓ Linked backend/weights -> gaze3d/weights"
 fi
 
 # Create __init__.py if it doesn't exist
