@@ -9,6 +9,7 @@ dependencies = [
     "boxmot==10.0.46",
     "einops==0.7.0",
     "eva-decord>=0.6.1",
+    "fastapi>=0.128.0",
     "gaze3d",
     "gdown==5.2.0",
     "gradio==5.29.1",
@@ -29,6 +30,7 @@ dependencies = [
     "torchvision==0.16.1",
     "transformers==4.35.2",
     "ultralytics>=8.4.9",
+    "uvicorn>=0.40.0",
     "wandb==0.16.1",
 ]
 
