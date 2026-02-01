@@ -8,3 +8,7 @@ gaze3D/
 # Data
 *.pt
 *.ckpt*
+*.jpg
+*.png
+*.jpeg
+*.mp4
